@@ -9,6 +9,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
 
 import java.util.Map;
@@ -42,6 +43,11 @@ public class StepDefs {
         String actualTitle = Driver.getDriver().getTitle();
         System.out.println("actualTitle = " + actualTitle);
         Assert.assertEquals(expectedTitle,actualTitle);
+
+    }
+    @Test
+    public void test(){
+        Assert.assertEquals(10,5+5);
     }
 
 }
